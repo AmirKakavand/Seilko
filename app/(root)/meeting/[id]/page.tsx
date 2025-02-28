@@ -10,9 +10,9 @@ import Loader from "@/components/Loader";
 
 const Meeting = () => {
   const pathname = usePathname();
-  const meetingId = pathname.split("/").filter(Boolean).pop();
+  const meetingId = pathname.split("/").filter(Boolean).pop() || "";
 
-  const { user, isLoaded } = useUser();
+  const { isLoaded } = useUser();
   const [isSetupComplete, setIsSetupComplete] = useState<boolean>(false);
 
   const { call, isCallLoading } = useGetCallById(meetingId);
