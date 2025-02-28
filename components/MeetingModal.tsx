@@ -36,7 +36,7 @@ const MeetingModal = ({
 }) => {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogTrigger>Open</DialogTrigger>
+      {/* <DialogTrigger>Open</DialogTrigger> */}
       <DialogContent className="flex w-full max-w-[520px] flex-col gap-6 border-none bg-dark-1 px-6 py-9 text-white">
         <DialogTitle className="hidden">Are you absolutely sure?</DialogTitle>
         <div className="flex flex-col gap-6">
