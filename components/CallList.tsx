@@ -58,6 +58,7 @@ const CallList = ({ type }: CallListProps) => {
           .flatMap((call) => call.recordings);
         setRecordings(recordedMeetings);
       } catch (error) {
+        console.log(error)
         toast({ title: "Try again later" });
       }
     };
